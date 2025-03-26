@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    
     <link rel="stylesheet" href="style.css" />
     <title>Home</title>
   </head>
@@ -17,9 +22,9 @@
           </div>
           <div class="header_nav">
             <ul>
-              <li><a href="#" id="home_nav">HOME</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">CATALOG</a></li>
+              <li><a href="home.html" id="active_home">HOME</a></li>
+              <li><a href="About.html">ABOUT</a></li>
+              <li><a href="#" >CATALOG</a></li>
               <li><a href="#">UPDATES</a></li>
               <li><a href="#">CONTACTS</a></li>
             </ul>
@@ -31,7 +36,7 @@
       <div class="interior_wrapper">
         <div class="inside_text">
           <h3>INTERIOR DE-SIGN</h3>
-          <h2>inside style</h2>
+          <h2>inside<span>style</span></h2>
         </div>
       </div>
     </secttion>
@@ -46,9 +51,10 @@
               <h1 id="Collections">Collections</h1>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga rem
-              quasi enim veniam. Corporis cupiditate nesciunt nisi officiis
-              quibusdam voluptatum quo vitae tenetur libero nam!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem, fuga accusamus? Error, corrupti laudantium magnam
+              nisi iste eveniet doloremque tempore unde. Repellat non asperiores
+              quam?
             </p>
             <a href="" class="btn">Learn More</a>
           </div>
@@ -61,12 +67,15 @@
     </secton>
     <section class="about">
       <div class="container">
+        <div class="about_header">
+          <span></span>
+          <h2>About Inside Style</h2>
+        </div>
         <div class="about_wrapper">
           <div class="about_img">
             <img src="./img/about-2.png" alt="" />
           </div>
           <div class="about_text">
-            <h2>About Inside Style</h2>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
               laborum perferendis necessitatibus culpa obcaecati debitis in quis
@@ -95,5 +104,89 @@
         </div>
       </div>
     </section>
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog_header">
+          <h2>Catalogs</h2>
+          <span></span>
+        </div>
+        <div class="catalog_wrapper">
+            <div class="card_details">
+              <img src="./img/catalog-3.png" alt="" />
+              <div class="catalog_textcard">
+                <h3>Boho Theme</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Suscipit, harum accusamus! Praesentium voluptates veniam
+                  magnam.
+                </p>
+                <a href="" class="">Read More...</a>
+              </div>
+            </div>
+            <div class="card_details">
+              <img src="./img/catalog-1.png" alt="" />
+              <div class="catalog_textcard">
+                <h3>Minimalist Theme</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Suscipit, harum accusamus! Praesentium voluptates veniam
+                  magnam.
+                </p>
+                <a href="" class="">Read More...</a>
+              </div>
+            </div>
+            <div class="card_details">
+              <img src="./img/catalog-2.png" alt="" />
+              <div class="catalog_textcard">
+                <h3>Traditional Theme</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Suscipit, harum accusamus! Praesentium voluptates veniam
+                  magnam.
+                </p>
+                <a href="" class="">Read More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="contact">
+      <div class="contact_wrapper">
+        <div class="contact_text">
+          <h3>Feel free to talk about your desired style</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
+            corporis optio repellat?
+          </p>
+          <a href="" class="btn">Contact us</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+      <div class="footer_wrapper">
+        <ul class="footer_social">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+          </li>
+        </ul>
+        <p>Baloc Road, Brgy. San Ignacio San Pablo City Laguna Philippines</p>
+        <p>©Insiide Style 2025</p>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>
