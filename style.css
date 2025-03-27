@@ -157,7 +157,7 @@ header .header_nav ul li a:hover {
 header {
   padding: 2rem 0;
   background-color: var(--clr-tertiary);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 1rem -1rem var(--dark);
 }
 header .toggle {
   display: none;
@@ -178,6 +178,7 @@ header .toggle_menu {
     align-items: center;
   }
   header .header_nav {
+    box-shadow: 0 1rem 1rem -1rem var(--dark);
     background-color: var(--clr-dark);
     position: absolute;
     top: 13rem;
@@ -763,7 +764,7 @@ footer .footer_social i {
   align-items: center;
   justify-content: center;
 }
-/* --------------------------------------------4th page update page-------------------------------------------- */
+/* --------------------------------------------3rd page update page-------------------------------------------- */
 .banner_update .update_wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -893,6 +894,7 @@ td {
     margin-left: 5rem;
   }
 }
+
 /* recent Project  */
 .recent_projects {
   padding: 8rem 0;
@@ -942,6 +944,91 @@ td {
     gap: 5rem;
   }
 }
+/* ---------------------------------------------4th page catalog page---------------------------------*/
+
+/* Catalog Banner */
+
+.catalog_banner {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),  url(./img/catalog-banner.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog_banner .catalog_text h2 {
+  color: var(--primary);
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.catalog_banner .catalog_text h3 {
+  color: var(--dark);
+  font-size: 3rem;
+  width: 40rem;
+  text-align: center;
+}
+/* Catalog card */
+.ctlgContent {
+  background: var(--clr-light);
+}
+.ctlgContent h2 {
+  color: var();
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 3rem 0 10rem;
+}
+.ctlgContent .ctlgContent_content {
+  display: flex;
+  flex-direction: row;
+  gap: 13rem;
+  align-items: center;
+  padding: 4.1rem 0;
+}
+
+.ctlgContent .ctlgContent_content:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.ctlgContent .ctlgContent_img {
+  position: relative;
+  z-index: 10;
+}
+
+.ctlgContent .ctlgContent_img::before {
+  content: "";
+  display: block;
+  background: var(--clr-secondary);
+  width: 100vw;
+  height: 51rem;
+  position: absolute;
+  top: -15%;
+  right: 10rem;
+  z-index: -1;
+}
+
+.ctlgContent .ctlgContent_content:nth-child(2) .ctlgContent_img::before {
+  left: 10rem;
+}
+
+.ctlgContent .ctlgContent_txt h3 {
+  color: var(--clr-primary);
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ctlgContent .ctlgContent_txt p {
+  width: 50rem;
+  text-align: justify;
+  padding-top: 5rem;
+}
+
 /* --------------------------------------------5th page Contact Page-------------------------------------------- */
 .contact_page {
   padding: 15.5rem 0;
